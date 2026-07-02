@@ -4,93 +4,185 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Combo ELEVEN — Chăm nước hồ Koi | Linh Long Koi Farm</title>
+<meta name="description" content="Bộ chăm nước hồ Koi ELEVEN của Linh Long Koi Farm: Khoáng nước · Khoáng bùn · Vi sinh · Vitamin C. Sửa từ nền nước, cá khỏe lên màu. Free ship + tư vấn 1-1."/>
 <style>
-  :root{ --teal:#0b4f4a; --teal2:#116a63; --koi:#e5533d; --bg:#f2f8f7; --ink:#1a1a1a; }
+  :root{ --teal:#0b4f4a; --teal2:#116a63; --koi:#e5533d; --gold:#e0a400; --bg:#f2f8f7; --ink:#1c2321; --mut:#5c6b67; }
   *{ box-sizing:border-box; }
-  body{ margin:0; font-family:"Segoe UI",Arial,sans-serif; color:var(--ink); line-height:1.6; background:#fff; }
-  .wrap{ max-width:720px; margin:0 auto; padding:0 18px; }
-  .hero{ background:linear-gradient(160deg,#0b4f4a,#116a63); color:#fff; text-align:center; padding:44px 18px 40px; }
-  .hero h1{ font-size:30px; margin:0 0 12px; line-height:1.2; }
-  .hero p{ font-size:18px; opacity:.95; margin:0 auto 22px; max-width:560px; }
+  body{ margin:0; font-family:"Segoe UI",system-ui,Arial,sans-serif; color:var(--ink); line-height:1.6; background:#fff; padding-bottom:64px; }
+  img{ max-width:100%; display:block; }
+  .wrap{ max-width:760px; margin:0 auto; padding:0 18px; }
+  .hero{ background:linear-gradient(160deg,#0b4f4a,#116a63); color:#fff; text-align:center; padding:40px 18px 34px; }
+  .hero h1{ font-size:29px; margin:0 0 12px; line-height:1.22; }
+  .hero .sub{ font-size:18px; opacity:.96; margin:0 auto 18px; max-width:600px; }
+  .hero img{ border-radius:14px; margin:8px auto 20px; box-shadow:0 10px 30px rgba(0,0,0,.28); max-height:340px; object-fit:cover; }
   .cta{ display:inline-block; background:var(--koi); color:#fff; text-decoration:none; font-weight:700;
-        font-size:18px; padding:15px 30px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.18); }
-  .cta:hover{ filter:brightness(1.05); }
-  section{ padding:34px 0; border-bottom:1px solid #eee; }
-  h2{ color:var(--teal); font-size:23px; margin:0 0 14px; }
-  h3{ color:var(--teal2); font-size:18px; margin:18px 0 6px; }
-  .pain li{ margin:8px 0; }
+        font-size:18px; padding:15px 28px; border-radius:12px; box-shadow:0 6px 18px rgba(229,83,61,.4); }
+  .cta:hover{ filter:brightness(1.06); }
+  .trustbar{ display:flex; flex-wrap:wrap; justify-content:center; gap:8px 16px; margin-top:18px; font-size:13.5px; font-weight:600; opacity:.95; }
+  .trustbar span::before{ content:"✓ "; color:#8ff0c8; }
+  section{ padding:34px 0; border-bottom:1px solid #eef1f0; }
+  h2{ color:var(--teal); font-size:23px; margin:0 0 16px; }
+  h3{ color:var(--teal2); font-size:17px; margin:0 0 6px; }
+  .pain li{ margin:9px 0; }
+  .quote{ font-style:italic; color:var(--mut); }
+  .ba{ background:var(--bg); border-radius:14px; padding:14px; }
+  .ba img{ border-radius:10px; }
+  .ba .cap{ text-align:center; color:var(--mut); font-size:14px; margin-top:8px; }
   .prods{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
-  .card{ background:var(--bg); border:1px solid #d6e7e5; border-radius:10px; padding:14px; }
-  .card.hot{ border-color:var(--koi); box-shadow:0 0 0 2px rgba(229,83,61,.15); }
-  .benefits li{ margin:7px 0; }
-  .price{ background:var(--bg); border-radius:14px; padding:24px; text-align:center; }
-  .price .combo{ font-size:34px; font-weight:800; color:var(--koi); margin:6px 0; }
+  .card{ background:var(--bg); border:1px solid #d6e7e5; border-radius:12px; padding:14px; }
+  .card.hot{ border-color:var(--koi); box-shadow:0 0 0 2px rgba(229,83,61,.14); }
+  .card small{ color:var(--mut); display:block; margin-top:6px; font-size:13px; }
+  .steps{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; text-align:center; }
+  .steps .n{ width:38px;height:38px;line-height:38px;border-radius:50%;background:var(--teal);color:#fff;font-weight:800;margin:0 auto 8px; }
+  .founder{ display:flex; gap:18px; align-items:center; flex-wrap:wrap; }
+  .founder img{ width:230px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,.15); }
+  .founder .txt{ flex:1; min-width:240px; }
+  .medals{ display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+  .medal{ background:#fff7e6; border:1px solid #f0d488; color:#8a6400; font-weight:700; font-size:13px; padding:6px 10px; border-radius:8px; }
+  .tst{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .tst .t{ background:var(--bg); border-left:4px solid var(--koi); border-radius:10px; padding:14px; }
+  .tst .t b{ color:var(--teal); }
+  .tst .stars{ color:var(--gold); letter-spacing:2px; }
+  .price{ background:linear-gradient(160deg,#fff,#f2f8f7); border:2px solid var(--koi); border-radius:16px; padding:24px; text-align:center; }
+  .price .le{ color:#8b8b8b; font-size:15px; }
+  .price .le s{ color:#b04; }
+  .price .combo{ font-size:36px; font-weight:800; color:var(--koi); margin:8px 0 2px; }
   .price small{ color:var(--teal2); font-weight:600; }
+  .guarantee{ background:var(--bg); border-radius:14px; padding:20px; }
+  .guarantee li{ margin:8px 0; }
   .pay{ text-align:center; }
-  .pay .bank{ background:#fff; border:2px dashed var(--teal); border-radius:12px; padding:16px; display:inline-block; margin:10px 0; }
-  .pay .bank b{ font-size:19px; letter-spacing:1px; }
-  .qr{ width:230px; max-width:80%; border:8px solid #fff; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,.12); }
-  .zalo{ background:#0068ff; }
+  .bank{ background:#fff; border:2px dashed var(--teal); border-radius:12px; padding:16px; display:inline-block; margin:10px 0; text-align:left; }
+  .qr{ width:220px; max-width:78%; border:8px solid #fff; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,.12); margin:6px auto; }
+  .zalo{ background:#0068ff; box-shadow:0 6px 18px rgba(0,104,255,.4); }
   .faq details{ background:var(--bg); border-radius:8px; padding:10px 14px; margin:8px 0; }
   .faq summary{ font-weight:700; cursor:pointer; color:var(--teal); }
-  footer{ text-align:center; color:#777; font-size:13px; padding:26px 18px; }
+  footer{ text-align:center; color:var(--mut); font-size:13px; padding:26px 18px 40px; }
   .center{ text-align:center; }
-  @media(max-width:560px){ .prods{ grid-template-columns:1fr; } .hero h1{ font-size:25px; } }
+  .sticky{ position:fixed; left:0; right:0; bottom:0; background:#0068ff; color:#fff; text-align:center;
+           padding:13px; font-weight:700; text-decoration:none; font-size:16px; z-index:50; box-shadow:0 -3px 14px rgba(0,0,0,.18); }
+  @media(max-width:620px){ .prods,.tst,.steps{ grid-template-columns:1fr; } .hero h1{ font-size:24px; } .steps{ grid-template-columns:1fr 1fr 1fr; } }
 </style>
 </head>
 <body>
 
+<!-- 1. HERO -->
 <div class="hero">
   <div class="wrap">
     <h1>Nước hồ trong lại, cá khỏe ăn khỏe — không phải cuống cuồng đánh thuốc mỗi lần nước xấu</h1>
-    <p>Bộ chăm nước hồ Koi <b>ELEVEN</b> của Linh Long Koi Farm: sửa từ <b>NỀN NƯỚC</b> — nơi quyết định cá khỏe hay yếu.</p>
-    <a class="cta" href="https://zalo.me/0979943026">👉 Nhắn Zalo đặt combo — được tư vấn hồ 1-1</a>
+    <p class="sub">Bộ chăm nước hồ Koi <b>ELEVEN</b> của Linh Long Koi Farm — sửa từ <b>NỀN NƯỚC</b>, nơi quyết định cá khỏe hay yếu.</p>
+    <img src="assets/koi-ho.jpg" alt="Hồ Koi nước trong tại Linh Long Koi Farm"/>
+    <div><a class="cta" href="https://zalo.me/0979943026">👉 Nhắn Zalo đặt combo — tư vấn hồ 1-1</a></div>
+    <div class="trustbar">
+      <span>300+ hồ Koi đang dùng</span><span>Free ship toàn quốc</span>
+      <span>Tư vấn 1-1 theo hồ</span><span>Giải Koi Show 2025 &amp; 2026</span>
+    </div>
   </div>
 </div>
 
 <div class="wrap">
 
+  <!-- 2. NỖI ĐAU (lời khách thật) -->
   <section class="pain">
     <h2>Anh em có đang gặp cảnh này?</h2>
     <ul>
-      <li>💧 Nước <b>đục, nổi bọt lâu tan, mùi tanh</b> — nhất là sau thay nước hoặc sau mưa.</li>
-      <li>🐟 Cá <b>bơi yếu, tụ góc, bỏ ăn</b>; có con thối đuôi, điểm đen, lồi mắt.</li>
-      <li>🧪 Thay nước, ngâm muối, bôi tím… <b>làm mãi vẫn không dứt</b>.</li>
+      <li>💧 <span class="quote">"Nước không được trong lắm", "đục có mùi tanh sau thay nước"</span> — nhìn hồ mà bực.</li>
+      <li>🫧 <span class="quote">"Bể có ít bọt lâu tan, cho cá ăn là hết"</span> — mặt hồ nổi bọt dai, dậy mùi.</li>
+      <li>🐟 Cá <b>bơi yếu, tụ góc, bỏ ăn</b>, da nhạt màu; có con thối đuôi, điểm đen.</li>
+      <li>🧪 Đã <b>thay nước, ngâm muối, bôi tím</b>… mà làm mãi vẫn không dứt.</li>
       <li>❓ Không biết <b>liều đúng cho hồ mấy khối</b> của mình.</li>
     </ul>
-    <p>Vấn đề không nằm ở thuốc. Nó nằm ở <b>nền nước</b> — thứ mình không nhìn thấy bằng mắt.</p>
+    <p>Phần lớn những cảnh này quy về một gốc: <b>nền nước bị "sập vi sinh"</b> — vi sinh yếu không xử lý được phân &amp; khí độc. Vấn đề không ở thuốc, mà ở <b>nền nước</b>.</p>
   </section>
 
+  <!-- 3. TRƯỚC / SAU -->
   <section>
-    <h2>Bộ ELEVEN — xử lý từ gốc, 4 món phối nhau</h2>
+    <h2>Hình thật khách hàng — trước &amp; sau</h2>
+    <div class="ba">
+      <img src="assets/san-pham.jpg" alt="Bộ ELEVEN và hình hồ Koi trước - sau khi dùng"/>
+      <div class="cap">Bộ chăm nước ELEVEN &amp; hồ khách trước – sau khi ổn định nền nước.</div>
+    </div>
+  </section>
+
+  <!-- 4. GIẢI PHÁP -->
+  <section>
+    <h2>Sửa từ gốc: nuôi lại NỀN NƯỚC</h2>
+    <p>Nuôi Koi không phải đợi cá bệnh rồi mới cuống cuồng đánh thuốc. Đánh thuốc chỉ dập <b>ngọn</b>. Giữ <b>nền nước</b> ổn định — vi sinh khỏe, đủ khoáng, pH không nhảy — thì cá ít stress, ít đổ bệnh, lên màu từ gốc. <b>Giữ nền nước ổn, cá khỏe, người nuôi bình an mỗi ngày.</b></p>
+  </section>
+
+  <!-- 5. SẢN PHẨM (minh bạch) -->
+  <section>
+    <h2>Bộ ELEVEN — 4 món phối nhau</h2>
     <div class="prods">
-      <div class="card hot"><h3>Model V — Siêu vi sinh xử lý nước</h3>Xử lý gốc khí độc (NH₃/NO₂), gây &amp; giữ hệ vi sinh — "trái tim vô hình" của hồ.</div>
-      <div class="card"><h3>ELEVEN — Xử lý nền nước (250ml)</h3>Ổn định nền nước, giảm bọt, giảm mùi tanh — nước trong &amp; dịu hơn.</div>
-      <div class="card"><h3>Vitamin C + Điện giải</h3>Giảm stress, tăng đề kháng — nhất là sau mưa/giao mùa/vận chuyển.</div>
-      <div class="card"><h3>Cám ELEVEN (1kg)</h3>Cám dưỡng cho cá ăn khỏe, hỗ trợ lên màu từ trong.</div>
+      <div class="card hot"><h3>Vi sinh</h3>Xử lý gốc khí độc (NH₃/NO₂/H₂S), giảm phân &amp; thức ăn thừa, giảm mùi tanh — nước trong. <small>Quy cách: dùng cho ~200 khối nước.</small></div>
+      <div class="card"><h3>Khoáng nước Liquamin</h3>Bù khoáng cho cột nước → da bóng, màu tươi, form &amp; vảy khỏe. <small>Bổ sung khoáng cho nước máy/nước thiếu khoáng.</small></div>
+      <div class="card"><h3>Khoáng bùn Mineral+ (ELEVEN)</h3>Ổn định tầng đáy &amp; pH, nuôi hệ vi sinh khỏe. <small>Quy cách: dùng cho ~100–150 khối nước.</small></div>
+      <div class="card"><h3>Vitamin C</h3>Giảm stress, tăng đề kháng — nhất là sau mưa, giao mùa, vận chuyển. <small>Quy cách: dùng ~50 khối nước / 100kg cám.</small></div>
     </div>
     <p class="center" style="margin-top:14px;color:var(--teal2)"><b>Nói thật:</b> khoáng &amp; Vitamin C là hỗ trợ — <b>vi sinh mới xử lý gốc</b>. Mình không bán kiểu thổi phồng.</p>
   </section>
 
-  <section class="benefits">
-    <h2>Anh em nhận được gì</h2>
-    <ul>
-      <li>✅ Nước <b>trong – sạch – hết bọt – hết tanh</b>, ổn định lâu dài.</li>
-      <li>✅ Cá <b>khỏe, ăn khỏe, lên màu</b>, ít đổ bệnh khi giao mùa/sau mưa.</li>
-      <li>✅ <b>Quy trình đơn giản</b> làm tại nhà: thay 30% nước → châm vi sinh → 2h sau châm khoáng.</li>
-      <li>✅ <b>Tư vấn 1-1</b>: mình hỏi kỹ hồ mấy khối, chỉ liều riêng cho đúng hồ của anh em.</li>
-      <li>✅ <b>Free ship toàn quốc.</b></li>
-    </ul>
+  <!-- 6. CÁCH DÙNG -->
+  <section>
+    <h2>Cách dùng — đơn giản tại nhà</h2>
+    <div class="steps">
+      <div><div class="n">1</div>Thay <b>30% nước</b> hàng tuần.</div>
+      <div><div class="n">2</div>Châm <b>vi sinh</b>.</div>
+      <div><div class="n">3</div><b>2 giờ sau</b> châm khoáng.</div>
+    </div>
+    <p class="center" style="margin-top:14px;color:var(--mut)">Nhận hàng nhắn Zalo — mình hỏi hồ mấy khối rồi <b>chỉ liều riêng cho đúng hồ</b> của anh em.</p>
   </section>
 
+  <!-- 7. FOUNDER -->
+  <section>
+    <h2>Người đứng sau bộ ELEVEN</h2>
+    <div class="founder">
+      <img src="assets/founder-koishow.jpg" alt="Đỗ Thanh Long tại All Vietnam Koi Show"/>
+      <div class="txt">
+        <p>Mình là <b>Đỗ Thanh Long</b>, chủ <b>Linh Long Koi Farm</b> (Gia Kiệm – Đồng Nai). Hơn <b>7 năm</b> theo nghề Koi Nhật, đã đến tận <b>8 nhà vườn Koi ở Nhật</b>, nhập hơn 1 tỷ tiền cá, đang chăm hơn 100 chú Koi.</p>
+        <p>Bộ ELEVEN chính là quy trình chăm nước mình đang dùng cho cá của trại — cá khỏe thật, lên giải thật:</p>
+        <div class="medals">
+          <span class="medal">🥇 1st + 🥈 2nd — All Vietnam Koi Show 2025</span>
+          <span class="medal">🥇 1st + 🥈 2nd — All Vietnam Koi Show 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. BẰNG CHỨNG KHÁCH -->
+  <section>
+    <h2>Khách đã dùng nói gì</h2>
+    <div class="tst">
+      <div class="t"><div class="stars">★★★★★</div><p>"Sản phẩm tốt. <b>Hồ ổn định dù mưa to liên tục mấy hôm vẫn ok.</b>"</p><b>— Anh Đức</b></div>
+      <div class="t"><div class="stars">★★★★★</div><p>"Hết khoáng là nhắn đặt tiếp." <br/><span class="quote">Khách Hà Nội mua lại lần 2 trong tháng.</span></p><b>— Anh Nhanh, Hà Nội</b></div>
+      <div class="t"><div class="stars">★★★★★</div><p>"Nuôi xuất sắc anh." <br/><span class="quote">Khách đã chuyển đổi &amp; đặt hàng.</span></p><b>— Anh Khoa</b></div>
+      <div class="t"><div class="stars">★★★★★</div><p>"Cảm ơn nhiều, mong sao có hiệu quả." <br/><span class="quote">Khách Biên Hòa, được tư vấn liều theo hồ.</span></p><b>— Anh Luận, Biên Hòa</b></div>
+    </div>
+    <p class="center" style="margin-top:12px;color:var(--mut);font-size:14px">Trích từ tin nhắn khách trên Page Linh Long Koi Farm (tên rút gọn). Nhiều khách <b>mua lại lần 2, lần 3</b> khi hết khoáng.</p>
+  </section>
+
+  <!-- 9. GIÁ -->
   <section>
     <h2>Giá &amp; ưu đãi</h2>
     <div class="price">
-      <div class="combo">COMBO ELEVEN trọn bộ: 990.000đ</div>
+      <div class="le">Mua lẻ 4 món: Vi sinh 250k · Khoáng nước 210k · Khoáng bùn 320k · Vitamin C 250k = <s>1.030.000đ</s></div>
+      <div class="combo">COMBO trọn bộ: 1.000.000đ</div>
       <small>Đã gồm free ship toàn quốc + tư vấn 1-1 theo đúng hồ của anh em</small>
     </div>
   </section>
 
+  <!-- 10. CAM KẾT -->
+  <section>
+    <div class="guarantee">
+      <h2 style="margin-top:0">Mình cam kết với anh em</h2>
+      <ul>
+        <li>✅ <b>Tư vấn 1-1 theo đúng hồ</b> trước khi anh em chốt — không ép mua.</li>
+        <li>✅ <b>Đồng hành sau bán</b>: nhận hàng nhắn lại, mình hướng dẫn dùng đúng từng bước.</li>
+        <li>✅ <b>Nói thật</b>: hồ đang ổn thì mình nói thẳng chưa cần mua thêm. Cá là sinh thể sống — mình <b>không hứa khỏi 100%</b>, chỉ cam kết làm thật, nói thật.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 11. ĐẶT HÀNG -->
   <section class="pay">
     <h2>Cách đặt — 2 bước gọn</h2>
     <p><b>Bước 1 — Chuyển khoản đặt combo:</b></p>
@@ -100,39 +192,38 @@
       Số TK: <b>6668666789789</b><br/>
       Nội dung: <i>Tên + SĐT + "Combo Koi"</i>
     </div><br/>
-    <img class="qr" alt="VietQR MB 990.000đ" src="https://img.vietqr.io/image/MB-6668666789789-compact2.png?amount=990000&addInfo=Combo%20Koi&accountName=DO%20THANH%20LONG"/>
-    <p><small>Quét là ra sẵn <b>990.000đ</b> + nội dung "Combo Koi".</small></p>
+    <img class="qr" src="https://img.vietqr.io/image/MB-6668666789789-compact2.png?amount=1000000&addInfo=Combo%20Koi&accountName=DO%20THANH%20LONG" alt="VietQR MB 1.000.000đ"/>
+    <p><small>Quét là ra sẵn <b>1.000.000đ</b> + nội dung "Combo Koi".</small></p>
     <p style="margin-top:18px"><b>Bước 2 — Nhắn Zalo để mình hỏi hồ &amp; chỉ liều riêng:</b></p>
     <a class="cta zalo" href="https://zalo.me/0979943026">💬 Nhắn Zalo 0979943026</a>
-    <p style="margin-top:12px;color:#666">Anh em cứ nhắn, nói mình nghe hồ mấy khối — mình tư vấn trước rồi hẵng chốt. Không ép.</p>
   </section>
 
-  <section>
-    <h2>Về Linh Long Koi Farm</h2>
-    <p>Trại Koi Japan tại Gia Kiệm – Đồng Nai, hơn 7 năm nghề, cá từng đạt giải Nhất/Nhì tại All Vietnam Koi Show 2025. Mình bán bộ chăm nước và đồng hành cùng anh em nuôi Koi tại nhà — <b>nhận hàng nhắn lại là được hướng dẫn dùng đúng hồ của mình</b>. Nghề này, mình tin: <i>nền nước ổn định là bình an của người nuôi.</i></p>
-  </section>
-
+  <!-- 12. FAQ -->
   <section class="faq">
     <h2>Hỏi &amp; đáp</h2>
-    <details><summary>Hồ em mấy khối thì dùng liều bao nhiêu?</summary>Anh em nhắn Zalo nói số khối hồ, mình chỉ liều riêng cho đúng — không để anh em làm mò.</details>
-    <details><summary>Cá đang bệnh dùng được không?</summary>Bộ này lo NỀN NƯỚC (gốc của phần lớn ca cá yếu). Cá bệnh nặng thì cách ly + soi nước + nhắn mình xem giúp; mình không hứa "khỏi 100%", nói thật để anh em yên tâm.</details>
-    <details><summary>Có ship xa không?</summary>Có — free ship toàn quốc.</details>
-    <details><summary>Dùng khó không?</summary>Không. Quy trình đơn giản, mình hướng dẫn từng bước sau khi nhận hàng.</details>
+    <details><summary>Hồ em mấy khối thì dùng liều bao nhiêu?</summary>Anh em nhắn Zalo nói số khối hồ, nguồn nước (máy/giếng), mình chỉ liều riêng cho đúng — không để anh em làm mò. Ví dụ hồ 4 khối: ~8 thìa khoáng duy trì mỗi tuần.</details>
+    <details><summary>Dùng cả 2 loại khoáng cùng lúc được không?</summary>Được. Khoáng nước lo cột nước, khoáng bùn lo nền đáy &amp; pH — bổ trợ nhau.</details>
+    <details><summary>Cá đang bệnh dùng được không?</summary>Bộ này lo NỀN NƯỚC (gốc của phần lớn ca cá yếu). Cá bệnh nặng thì cách ly + soi nước + nhắn mình xem giúp; mình không hứa "khỏi 100%".</details>
+    <details><summary>Có ship xa không?</summary>Có — free ship toàn quốc. Khách từ Lào Cai, Điện Biên, Nghệ An… mình đều gửi.</details>
+    <details><summary>Dùng khó không?</summary>Không. Quy trình 3 bước đơn giản, mình hướng dẫn từng bước sau khi nhận hàng.</details>
   </section>
 
 </div>
 
+<!-- 13. CTA CUỐI -->
 <div class="hero" style="padding:34px 18px">
   <div class="wrap">
-    <h1 style="font-size:24px">Giữ nền nước — giữ đàn cá — giữ sự bình an</h1>
-    <a class="cta" href="https://zalo.me/0979943026">👉 Nhắn Zalo 0979943026 đặt combo 990.000đ</a>
+    <h1 style="font-size:23px">Giữ nền nước — giữ đàn cá — giữ sự bình an</h1>
+    <a class="cta" href="https://zalo.me/0979943026">👉 Nhắn Zalo 0979943026 đặt combo 1.000.000đ</a>
   </div>
 </div>
 
 <footer>
   © Linh Long Koi Farm · Đỗ Thanh Long · Zalo 0979943026 · Gia Kiệm – Đồng Nai<br/>
-  <span style="color:#aaa">Nội dung mang tính chia sẻ kinh nghiệm nuôi Koi, không thay thế tư vấn thú y chuyên môn.</span>
+  <span style="color:#aaa">Nội dung chia sẻ kinh nghiệm nuôi Koi, không thay thế tư vấn thú y chuyên môn.</span>
 </footer>
+
+<a class="sticky" href="https://zalo.me/0979943026">💬 Nhắn Zalo đặt Combo ELEVEN — 1.000.000đ (free ship)</a>
 
 </body>
 </html>
